@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.6 on darwin)" generated="2025-07-07T20:48:25.142255" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Logout Tests" source="/Users/bytedance/qa_sawit_pro/tests/login_logout_tests.robot">
+<kw name="Open Application" owner="AppiumLibrary" type="SETUP">
+<msg time="2025-07-07T20:48:25.319863" level="FAIL">Keyword 'AppiumLibrary.Open Application' expected 1 to 2 non-named arguments, got 0.</msg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-07-07T20:48:25.319724" elapsed="0.004059">Keyword 'AppiumLibrary.Open Application' expected 1 to 2 non-named arguments, got 0.</status>
+</kw>
+<test id="s1-t1" name="Successful Login and Logout" line="10">
+<status status="FAIL" start="2025-07-07T20:48:25.323913" elapsed="0.000308">Parent suite setup failed:
+Keyword 'AppiumLibrary.Open Application' expected 1 to 2 non-named arguments, got 0.</status>
+</test>
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-07-07T20:48:25.325300" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-07-07T20:48:25.325075" elapsed="0.002470">No application is open</status>
+</kw>
+<msg time="2025-07-07T20:48:25.328304" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-07-07T20:48:25.328631" level="FAIL">No application is open</msg>
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="FAIL" start="2025-07-07T20:48:25.324874" elapsed="0.004104">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-07-07T20:48:25.147678" elapsed="0.181392">Suite setup failed:
+Keyword 'AppiumLibrary.Open Application' expected 1 to 2 non-named arguments, got 0.
+
+Also suite teardown failed:
+No application is open</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login Logout Tests" id="s1" pass="0" fail="1" skip="0">Login Logout Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-07-07T20:48:25.328304" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
